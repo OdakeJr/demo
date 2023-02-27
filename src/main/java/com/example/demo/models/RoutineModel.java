@@ -17,10 +17,11 @@ public class RoutineModel {
     private int line;
     private String nome;
     private String description;
-    private List<BaseTag> tag; //@Todo: change for tagBase or so
+    private List<Object> tag; //@Todo: change for tagBase or so
+    //private String[] tag;
     private boolean enabled;
 
-    public RoutineModel(int id, int line, String nome, String description, List<BaseTag> tag, boolean enabled) {
+    public RoutineModel(int id, int line, String nome, String description, List<Object> /*String[]*/ tag, boolean enabled) {
         this.id = id;
         this.line = line;
         this.nome = nome;
